@@ -2,7 +2,8 @@ import { NgGridItem } from "../directives/NgGridItem";
 
 export class NgGridHelper {
 	public static generateUuid(): string {
-		return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
+		let tmpl = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";
+		return tmpl.replace(/[xy]/g, (c) => {
 			// tslint:disable:no-bitwise
 			let r = Math.random() * 16 | 0;
 			let v = c === "x" ? r : (r & 0x3 | 0x8);

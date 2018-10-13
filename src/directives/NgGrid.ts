@@ -1,6 +1,5 @@
 import { Directive, ElementRef, Renderer, EventEmitter, ComponentFactoryResolver, ComponentRef, KeyValueDiffer, KeyValueDiffers, OnInit, OnDestroy, DoCheck, Output } from "@angular/core";
-import { Observable } from "rxjs/Observable";
-import { Subscription } from "rxjs/Subscription";
+import { Observable, Subscription, fromEvent } from "rxjs";
 import { NgGridPlaceholder } from "../components/NgGridPlaceholder";
 import { NgGridHelper } from "../helpers/NgGridHelper";
 import { NgGridConfig, NgGridItemEvent, NgGridItemPosition, NgGridItemSize, NgGridRawPosition, NgGridItemDimensions, NgConfigFixDirection } from "../interfaces/INgGrid";
@@ -70,7 +69,7 @@ export class NgGrid implements OnInit, DoCheck, OnDestroy {
 	private _placeholderRef: ComponentRef<NgGridPlaceholder> = null;
 	private _fixToGrid: boolean = false;
 	private _autoResize: boolean = false;
-	private _differ: KeyValueDiffer;
+	private _differ: KeyValueDiffer<string, any>;
 	private _destroyed: boolean = false;
 	private _maintainRatio: boolean = false;
 	private _aspectRatio: number;
@@ -144,7 +143,7 @@ export class NgGrid implements OnInit, DoCheck, OnDestroy {
 		this.setConfig(v);
 
 		if (this._differ == null && v != null) {
-			this._differ = this._differs.find(this._config).create(null);
+			this._differ = this._differs.find(this._config).create();
 		}
 
 		this._differ.diff(this._config);
@@ -1511,14 +1510,14 @@ export class NgGrid implements OnInit, DoCheck, OnDestroy {
 	private _defineListeners(): void {
 		const element = this._ngEl.nativeElement;
 
-		this._documentMousemove$ = Observable.fromEvent(document, "mousemove");
-		this._documentMouseup$ = Observable.fromEvent(document, "mouseup");
-		this._mousedown$ = Observable.fromEvent(element, "mousedown");
-		this._mousemove$ = Observable.fromEvent(element, "mousemove");
-		this._mouseup$ = Observable.fromEvent(element, "mouseup");
-		this._touchstart$ = Observable.fromEvent(element, "touchstart");
-		this._touchmove$ = Observable.fromEvent(element, "touchmove");
-		this._touchend$ = Observable.fromEvent(element, "touchend");
+		this._documentMousemove$ = <Observable<MouseEvent>> fromEvent(document, "mousemove");
+		this._documentMouseup$ = <Observable<MouseEvent>> fromEvent(document, "mouseup");
+		this._mousedown$ = <Observable<MouseEvent>> fromEvent(element, "mousedown");
+		this._mousemove$ = <Observable<MouseEvent>> fromEvent(element, "mousemove");
+		this._mouseup$ = <Observable<MouseEvent>> fromEvent(element, "mouseup");
+		this._touchstart$ = <Observable<TouchEvent>> fromEvent(element, "touchstart");
+		this._touchmove$ = <Observable<TouchEvent>> fromEvent(element, "touchmove");
+		this._touchend$ = <Observable<TouchEvent>> fromEvent(element, "touchend");
 	}
 
 	private _enableListeners(): void {

@@ -63,7 +63,7 @@ export class NgGridItem implements OnInit, OnDestroy, DoCheck {
 	private _elemLeft: number;
 	private _elemTop: number;
 	private _added: boolean = false;
-	private _differ: KeyValueDiffer;
+	private _differ: KeyValueDiffer<string, any>;
 	private _cascadeMode: string;
 	private _maxCols: number = 0;
 	private _minCols: number = 0;
@@ -94,7 +94,7 @@ export class NgGridItem implements OnInit, OnDestroy, DoCheck {
 
 		if (this._userConfig != null) {
 			if (this._differ == null) {
-				this._differ = this._differs.find(this._userConfig).create(null);
+				this._differ = this._differs.find(this._userConfig).create();
 			}
 
 			this._differ.diff(this._userConfig);

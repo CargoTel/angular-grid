@@ -1,6 +1,6 @@
 {
-  "name": "angular2-grid",
-  "private": true,
+  "name": "angular-grid",
+  "version": "2.4.0",
   "description": "A grid-based drag/drop/resize directive plugin for Angular 2",
   "scripts": {
     "cleanup": "rimraf dist/bundles dist/components dist/directives dist/interfaces dist/modules dist/main.d.ts dist/main.metadata.json dist/main.js dist/main.js.map dist/LICENSE dist/README.md",
@@ -13,16 +13,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BTMorton/angular2-grid.git"
+    "url": "https://github.com/neryams/angular-grid.git"
   },
   "keywords": [
     "angular",
-    "angular2",
+    "angular6",
     "grid",
     "web-components"
   ],
   "author": "Ben Morton <ben.morton91@gmail.com> (http://bmorton.co.uk/)",
   "contributors": [
+    "Raymon Ohmori (https://github.com/neryams)",
     "Martin Sikora (https://github.com/martinsik)",
     "Daniel Pastor de la Fuenta (https://github.com/aebsubis)",
     "Frederik Schubert (https://github.com/frederikschubert)",
@@ -50,16 +51,16 @@
     "dist/typings/"
   ],
   "devDependencies": {
-    "@angular/compiler": "^2.4.0",
-    "@angular/compiler-cli": "^2.4.0",
-    "@angular/core": "^2.4.0",
+    "@angular/compiler": "^6.1.10",
+    "@angular/compiler-cli": "^6.1.10",
+    "@angular/core": "^6.1.10",
     "copyfiles": "^1.0.0",
     "reflect-metadata": "^0.1.8",
     "rimraf": "^2.5.4",
     "rollup": "^0.37.0",
-    "rxjs": "^5.0.1",
+    "rxjs": "^6.3.3",
     "tslint": "^4.5.1",
-    "typescript": "~2.0.10",
+    "typescript": "~2.9.2",
     "uglify-js": "^2.7.5",
     "zone.js": "^0.7.2"
   }
