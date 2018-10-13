@@ -5,8 +5,6 @@ import { NgGridHelper } from "../helpers/NgGridHelper";
 import { NgGridConfig, NgGridItemEvent, NgGridItemPosition, NgGridItemSize, NgGridRawPosition, NgGridItemDimensions, NgConfigFixDirection } from "../interfaces/INgGrid";
 import { NgGridItem } from "./NgGridItem";
 
-import "rxjs/add/observable/fromEvent";
-
 @Directive({
 	host: {
 		"(window:resize)": "resizeEventHandler($event)",

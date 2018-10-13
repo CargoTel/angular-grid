@@ -15,6 +15,8 @@
     "type": "git",
     "url": "https://github.com/neryams/angular-grid.git"
   },
+  "main": "./dist/bundles/NgGrid.umd.js",
+  "typings": "./dist/main.d.ts",
   "keywords": [
     "angular",
     "angular6",
@@ -50,18 +52,22 @@
     "dist/aot/",
     "dist/typings/"
   ],
-  "devDependencies": {
+  "dependencies": {
     "@angular/compiler": "^6.1.10",
     "@angular/compiler-cli": "^6.1.10",
-    "@angular/core": "^6.1.10",
     "copyfiles": "^1.0.0",
     "reflect-metadata": "^0.1.8",
     "rimraf": "^2.5.4",
     "rollup": "^0.37.0",
-    "rxjs": "^6.3.3",
-    "tslint": "^4.5.1",
     "typescript": "~2.9.2",
-    "uglify-js": "^2.7.5",
+    "uglify-js": "^2.7.5"
+  },
+  "peerDependencies": {
+    "@angular/core": "^6.1.10",
+    "rxjs": "^6.3.3",
     "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "tslint": "^4.5.1"
   }
 }
