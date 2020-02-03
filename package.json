@@ -7,7 +7,7 @@
     "bundling": "rollup -c",
     "minify": "uglifyjs dist/bundles/NgGrid.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/NgGrid.umd.min.js",
     "copy": "copyfiles -f LICENSE README.md src/*.css dist",
-    "build": "npm run lint && ngc && npm run bundling && npm run minify",
+    "build": "ngc && npm run bundling && npm run minify",
     "lint": "tslint -c tslint.json --project tsconfig.json",
     "package": "npm run cleanup && ngc && npm run bundling && npm run minify && npm run copy"
   },
@@ -68,12 +68,11 @@
     "reflect-metadata": "^0.1.8",
     "rimraf": "^2.5.4",
     "rollup": "^0.37.0",
-    "typescript": "~2.9.2",
     "uglify-js": "^2.7.5"
   },
   "peerDependencies": {
     "@angular/core": "^6.1.10",
-    "rxjs": "^6.3.3",
+    "rxjs": "^6.5.4",
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
@@ -81,7 +80,8 @@
     "@angular-devkit/build-ng-packagr": "~0.900.0-rc.12",
     "@angular/cli": "^9.0.0-rc.12",
     "@angular/compiler-cli": "^9.0.0-rc.13",
-    "@angular/language-service": "^9.0.0-rc.13",
+    "@angular/language-service": "^9.0.0-rc.13",    
+    "typescript": "3.7.5",
     "tslint": "^6.0.0"
   }
 }
