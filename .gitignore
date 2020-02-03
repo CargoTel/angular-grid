@@ -12,4 +12,3 @@ test/*.js.map
 test/*.d.ts
 .idea/
 temp/
-dist/
