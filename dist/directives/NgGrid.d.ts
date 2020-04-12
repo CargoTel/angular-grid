@@ -154,6 +154,6 @@ export declare class NgGrid implements OnInit, DoCheck, OnDestroy {
     private _isTouchDevice;
     private _enableTouchListeners;
     private _enableMouseListeners;
-    static ɵfac: i0.ɵɵFactoryDef<NgGrid>;
+    static ɵfac: i0.ɵɵFactoryDef<NgGrid, never>;
     static ɵdir: i0.ɵɵDirectiveDefWithMeta<NgGrid, "[ngGrid]", never, { "config": "ngGrid"; }, { "onDragStart": "onDragStart"; "onDrag": "onDrag"; "onDragStop": "onDragStop"; "onResizeStart": "onResizeStart"; "onResize": "onResize"; "onResizeStop": "onResizeStop"; "onItemChange": "onItemChange"; }, never>;
 }

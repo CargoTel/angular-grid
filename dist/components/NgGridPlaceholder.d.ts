@@ -19,6 +19,6 @@ export declare class NgGridPlaceholder implements OnInit {
     private _setPosition;
     private _recalculatePosition;
     private _recalculateDimensions;
-    static ɵfac: i0.ɵɵFactoryDef<NgGridPlaceholder>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NgGridPlaceholder, "ng-grid-placeholder", never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDef<NgGridPlaceholder, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<NgGridPlaceholder, "ng-grid-placeholder", never, {}, {}, never, never>;
 }

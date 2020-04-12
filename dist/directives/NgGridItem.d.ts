@@ -99,6 +99,6 @@ export declare class NgGridItem implements OnInit, OnDestroy, DoCheck {
     private _applyChanges;
     private onConfigChangeEvent;
     private canResizeInDirection;
-    static ɵfac: i0.ɵɵFactoryDef<NgGridItem>;
+    static ɵfac: i0.ɵɵFactoryDef<NgGridItem, never>;
     static ɵdir: i0.ɵɵDirectiveDefWithMeta<NgGridItem, "[ngGridItem]", never, { "config": "ngGridItem"; }, { "onItemChange": "onItemChange"; "onDragStart": "onDragStart"; "onDrag": "onDrag"; "onDragStop": "onDragStop"; "onDragAny": "onDragAny"; "onResizeStart": "onResizeStart"; "onResize": "onResize"; "onResizeStop": "onResizeStop"; "onResizeAny": "onResizeAny"; "onChangeStart": "onChangeStart"; "onChange": "onChange"; "onChangeStop": "onChangeStop"; "onChangeAny": "onChangeAny"; "ngGridItemChange": "ngGridItemChange"; }, never>;
 }
