@@ -4,13 +4,13 @@ import * as i0 from "@angular/core";
 var NgGridModule = /** @class */ (function () {
     function NgGridModule() {
     }
-    NgGridModule.ɵmod = i0.ɵɵdefineNgModule({ type: NgGridModule });
-    NgGridModule.ɵinj = i0.ɵɵdefineInjector({ factory: function NgGridModule_Factory(t) { return new (t || NgGridModule)(); } });
+    NgGridModule.ɵfac = function NgGridModule_Factory(t) { return new (t || NgGridModule)(); };
+    NgGridModule.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: NgGridModule });
+    NgGridModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({});
     return NgGridModule;
 }());
 export { NgGridModule };
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(NgGridModule, { declarations: [NgGrid, NgGridItem, NgGridPlaceholder], exports: [NgGrid, NgGridItem] }); })();
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(NgGridModule, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(NgGridModule, [{
         type: NgModule,
         args: [{
                 declarations: [NgGrid, NgGridItem, NgGridPlaceholder],
@@ -18,4 +18,5 @@ export { NgGridModule };
                 exports: [NgGrid, NgGridItem],
             }]
     }], null, null); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(NgGridModule, { declarations: [NgGrid, NgGridItem, NgGridPlaceholder], exports: [NgGrid, NgGridItem] }); })();
 //# sourceMappingURL=NgGrid.module.js.map

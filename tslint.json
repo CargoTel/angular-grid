@@ -1,16 +1,67 @@
 {
     "extends": "tslint:recommended",
     "rules": {
+      "align": {
+        "options": [
+          "parameters",
+          "statements"
+        ]
+      },
         "indent": [
             true,
             "tabs"
         ],
+        "arrow-return-shorthand": true,
         "variable-name": false,
         "curly": false,
+        "eofline": true,
+        "import-spacing": true,
         "max-line-length": false,
         "array-type": [ true, "array-simple" ],
         "comment-format": false,
         "ordered-imports": false,
-        "interface-name": false
+        "semicolon": {
+          "options": [
+            "always"
+          ]
+        },
+        "space-before-function-paren": {
+          "options": {
+            "anonymous": "never",
+            "asyncArrow": "always",
+            "constructor": "never",
+            "method": "never",
+            "named": "never"
+          }
+        },
+        "typedef-whitespace": {
+          "options": [
+            {
+              "call-signature": "nospace",
+              "index-signature": "nospace",
+              "parameter": "nospace",
+              "property-declaration": "nospace",
+              "variable-declaration": "nospace"
+            },
+            {
+              "call-signature": "onespace",
+              "index-signature": "onespace",
+              "parameter": "onespace",
+              "property-declaration": "onespace",
+              "variable-declaration": "onespace"
+            }
+          ]
+        },
+        "interface-name": false,
+        "whitespace": {
+          "options": [
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type",
+            "check-typecast"
+          ]
+        }
     }
 }

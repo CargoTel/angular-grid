@@ -54,7 +54,7 @@ var NgGridItem = /** @class */ (function () {
             this._renderer.setStyle(this._ngEl.nativeElement, "z-index", zIndex.toString());
             this._zIndex = zIndex;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Object.defineProperty(NgGridItem.prototype, "config", {
@@ -79,49 +79,49 @@ var NgGridItem = /** @class */ (function () {
             this._recalculateDimensions();
             this._recalculatePosition();
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Object.defineProperty(NgGridItem.prototype, "sizex", {
         get: function () {
             return this._size.x;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Object.defineProperty(NgGridItem.prototype, "sizey", {
         get: function () {
             return this._size.y;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Object.defineProperty(NgGridItem.prototype, "col", {
         get: function () {
             return this._currentPosition.col;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Object.defineProperty(NgGridItem.prototype, "row", {
         get: function () {
             return this._currentPosition.row;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Object.defineProperty(NgGridItem.prototype, "currentCol", {
         get: function () {
             return this._currentPosition.col;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Object.defineProperty(NgGridItem.prototype, "currentRow", {
         get: function () {
             return this._currentPosition.row;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     NgGridItem.prototype.onResizeStartEvent = function () {
@@ -581,11 +581,11 @@ var NgGridItem = /** @class */ (function () {
         resizeDirections: null,
     };
     NgGridItem.ɵfac = function NgGridItem_Factory(t) { return new (t || NgGridItem)(i0.ɵɵdirectiveInject(i0.KeyValueDiffers), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i1.NgGrid), i0.ɵɵdirectiveInject(i0.ViewContainerRef)); };
-    NgGridItem.ɵdir = i0.ɵɵdefineDirective({ type: NgGridItem, selectors: [["", "ngGridItem", ""]], inputs: { config: ["ngGridItem", "config"] }, outputs: { onItemChange: "onItemChange", onDragStart: "onDragStart", onDrag: "onDrag", onDragStop: "onDragStop", onDragAny: "onDragAny", onResizeStart: "onResizeStart", onResize: "onResize", onResizeStop: "onResizeStop", onResizeAny: "onResizeAny", onChangeStart: "onChangeStart", onChange: "onChange", onChangeStop: "onChangeStop", onChangeAny: "onChangeAny", ngGridItemChange: "ngGridItemChange" } });
+    NgGridItem.ɵdir = /*@__PURE__*/ i0.ɵɵdefineDirective({ type: NgGridItem, selectors: [["", "ngGridItem", ""]], inputs: { config: ["ngGridItem", "config"] }, outputs: { onItemChange: "onItemChange", onDragStart: "onDragStart", onDrag: "onDrag", onDragStop: "onDragStop", onDragAny: "onDragAny", onResizeStart: "onResizeStart", onResize: "onResize", onResizeStop: "onResizeStop", onResizeAny: "onResizeAny", onChangeStart: "onChangeStart", onChange: "onChange", onChangeStop: "onChangeStop", onChangeAny: "onChangeAny", ngGridItemChange: "ngGridItemChange" } });
     return NgGridItem;
 }());
 export { NgGridItem };
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(NgGridItem, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(NgGridItem, [{
         type: Directive,
         args: [{
                 inputs: ["config: ngGridItem"],

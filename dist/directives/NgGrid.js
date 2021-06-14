@@ -84,7 +84,7 @@ var NgGrid = /** @class */ (function () {
             }
             this._differ.diff(this._config);
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     //	Public methods
@@ -1357,13 +1357,13 @@ var NgGrid = /** @class */ (function () {
         allow_overlap: false,
     };
     NgGrid.ɵfac = function NgGrid_Factory(t) { return new (t || NgGrid)(i0.ɵɵdirectiveInject(i0.KeyValueDiffers), i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i0.ComponentFactoryResolver)); };
-    NgGrid.ɵdir = i0.ɵɵdefineDirective({ type: NgGrid, selectors: [["", "ngGrid", ""]], hostBindings: function NgGrid_HostBindings(rf, ctx) { if (rf & 1) {
+    NgGrid.ɵdir = /*@__PURE__*/ i0.ɵɵdefineDirective({ type: NgGrid, selectors: [["", "ngGrid", ""]], hostBindings: function NgGrid_HostBindings(rf, ctx) { if (rf & 1) {
             i0.ɵɵlistener("resize", function NgGrid_resize_HostBindingHandler($event) { return ctx.resizeEventHandler($event); }, false, i0.ɵɵresolveWindow);
         } }, inputs: { config: ["ngGrid", "config"] }, outputs: { onDragStart: "onDragStart", onDrag: "onDrag", onDragStop: "onDragStop", onResizeStart: "onResizeStart", onResize: "onResize", onResizeStop: "onResizeStop", onItemChange: "onItemChange" } });
     return NgGrid;
 }());
 export { NgGrid };
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(NgGrid, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(NgGrid, [{
         type: Directive,
         args: [{
                 host: {

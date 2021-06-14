@@ -78,11 +78,11 @@ var NgGridPlaceholder = /** @class */ (function () {
         this._setDimensions(w, h);
     };
     NgGridPlaceholder.ɵfac = function NgGridPlaceholder_Factory(t) { return new (t || NgGridPlaceholder)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.Renderer2)); };
-    NgGridPlaceholder.ɵcmp = i0.ɵɵdefineComponent({ type: NgGridPlaceholder, selectors: [["ng-grid-placeholder"]], decls: 0, vars: 0, template: function NgGridPlaceholder_Template(rf, ctx) { }, encapsulation: 2 });
+    NgGridPlaceholder.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: NgGridPlaceholder, selectors: [["ng-grid-placeholder"]], decls: 0, vars: 0, template: function NgGridPlaceholder_Template(rf, ctx) { }, encapsulation: 2 });
     return NgGridPlaceholder;
 }());
 export { NgGridPlaceholder };
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(NgGridPlaceholder, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(NgGridPlaceholder, [{
         type: Component,
         args: [{
                 selector: "ng-grid-placeholder",
